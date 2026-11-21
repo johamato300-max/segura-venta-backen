@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: seguraventa
+    runtime: static
+    buildCommand: echo "sin compilar"
+    staticPublishPath: .
+    headers:
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache
